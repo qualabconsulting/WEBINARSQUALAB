@@ -148,7 +148,7 @@
     }
     .cd-num{font-family:'Anton';font-size:clamp(1.7rem,4vw,2.4rem);line-height:1;color:var(--cyan-2)}
     .cd-lab{display:block;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:7px}
-    .cd-live{font-weight:600;color:var(--yellow);font-size:1.05rem;padding:14px 22px;border:1px solid rgba(255,214,10,.4);border-radius:14px;display:inline-block}
+    .cd-live{font-weight:600;color:var(--yellow);font-size:1.05rem;padding:14px 22px;border:1px solid rgba(255,214,10,.4);border-radius:14px}
     @media(max-width:480px){.cd-tile{min-width:0;flex:1;padding:12px 4px}}
 
     /* ---------- Franja de detalles ---------- */
@@ -269,11 +269,10 @@
 <body>
 
   <!-- ════════════════════════════════════════════════════════════
-       ⚠️ IMPORTANTE: Reemplaza el enlace del grupo de WhatsApp.
-       Busca en el archivo TODAS las líneas que contengan:
-       https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO
-       y sustitúyelas por el enlace real de tu grupo
-       (WhatsApp → info del grupo → Invitar mediante enlace).
+       Enlace del grupo de WhatsApp (ya configurado):
+       https://chat.whatsapp.com/BDOQGQourUIIJqd4AULmF8
+       Si algún día cambias de grupo, reemplaza ese enlace en los
+       4 lugares donde aparece (usa Ctrl+F / Cmd+F y busca "whatsapp").
   ════════════════════════════════════════════════════════════ -->
 
   <!-- Navbar -->
@@ -294,8 +293,8 @@
         <a href="#aprenderas">Temario</a>
         <a href="#detalles">Fecha y hora</a>
       </nav>
-      <a class="btn btn-yellow btn-sm" target="_blank" rel="noopener"
-         href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">Registrarme gratis</a>
+      <a class="btn btn-yellow btn-sm" target="_blank" rel="noopener noreferrer"
+         href="https://chat.whatsapp.com/BDOQGQourUIIJqd4AULmF8">Registrarme gratis</a>
     </div>
   </header>
 
@@ -324,8 +323,8 @@
         </p>
 
         <div class="hero-ctas reveal d3">
-          <a class="btn btn-yellow btn-lg btn-shout" target="_blank" rel="noopener"
-             href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">
+          <a class="btn btn-yellow btn-lg btn-shout" target="_blank" rel="noopener noreferrer"
+             href="https://chat.whatsapp.com/BDOQGQourUIIJqd4AULmF8">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             ¡Regístrate gratis!
           </a>
@@ -335,7 +334,7 @@
         <p class="hero-note reveal d4">Al registrarte entrarás al <b>grupo oficial de WhatsApp</b> del evento. Sin costo.</p>
 
         <div class="countdown-wrap reveal d4">
-          <p class="cd-label">El webinar comienza en</p>
+          <p class="cd-label" id="cd-label">El webinar comienza en</p>
           <div class="countdown" id="countdown" role="timer">
             <div class="cd-tile"><span class="cd-num" id="cd-d">--</span><span class="cd-lab">Días</span></div>
             <div class="cd-tile"><span class="cd-num" id="cd-h">--</span><span class="cd-lab">Horas</span></div>
@@ -436,8 +435,8 @@
           <h2 class="h2">¡Aparta tu lugar <span class="accent">hoy</span>!</h2>
           <p>El registro es <b>100% gratuito</b>. Únete al grupo de WhatsApp de <b>QUALAB Consultoría</b> y recibe ahí el enlace de Zoom, recordatorios y el material del webinar.</p>
 
-          <a class="btn btn-green btn-lg" target="_blank" rel="noopener"
-             href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">
+          <a class="btn btn-green btn-lg" target="_blank" rel="noopener noreferrer"
+             href="https://chat.whatsapp.com/BDOQGQourUIIJqd4AULmF8">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Unirme al grupo de WhatsApp
           </a>
@@ -466,52 +465,62 @@
         </svg>
         <span class="logo-text">QUALAB<small>Consultoría</small></span>
       </a>
-      <br>
       <span class="tagline">La ciencia detrás de tu comida</span>
       <p>© <span id="year"></span> QUALAB Consultoría. Webinar gratuito con fines educativos. Transmisión vía Zoom.</p>
     </div>
   </footer>
 
   <!-- Botón flotante de WhatsApp -->
-  <a class="wa-float" target="_blank" rel="noopener" aria-label="Únete al grupo de WhatsApp"
-     href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">
+  <a class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Únete al grupo de WhatsApp"
+     href="https://chat.whatsapp.com/BDOQGQourUIIJqd4AULmF8">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <script>
     // ====== CONFIGURA AQUÍ LA FECHA Y HORA DEL EVENTO ======
     // Formato: AAAA-MM-DDTHH:MM:SS-06:00  (-06:00 = hora CDMX)
-    const EVENT_DATE = new Date('2026-10-01T19:30:00-06:00');
+    var EVENT_DATE = new Date('2026-10-01T19:30:00-06:00');
     // ========================================================
 
-    const $ = id => document.getElementById(id);
-    const pad = n => String(n).padStart(2, '0');
+    function $(id){ return document.getElementById(id); }
+    function pad(n){ return String(n).padStart(2, '0'); }
+
+    var timer = null;
 
     function tick() {
-      const diff = EVENT_DATE.getTime() - Date.now();
+      var el = $('countdown');
+      if (!el) return;
+      var diff = EVENT_DATE.getTime() - Date.now();
       if (diff <= 0) {
-        $('countdown').innerHTML = '<p class="cd-live">¡Es hoy! Revisa el grupo de WhatsApp para el enlace de Zoom 🎥</p>';
         clearInterval(timer);
+        var label = $('cd-label');
+        if (label) label.textContent = 'El webinar está por comenzar';
+        el.innerHTML = '<p class="cd-live">¡Es hoy! Revisa el grupo de WhatsApp para el enlace de Zoom 🎥</p>';
         return;
       }
       $('cd-d').textContent = pad(Math.floor(diff / 864e5));
-      $('cd-h').textContent = pad(Math.floor(diff % 864e5 / 36e5));
-      $('cd-m').textContent = pad(Math.floor(diff % 36e5 / 6e4));
-      $('cd-s').textContent = pad(Math.floor(diff % 6e4 / 1e3));
+      $('cd-h').textContent = pad(Math.floor((diff % 864e5) / 36e5));
+      $('cd-m').textContent = pad(Math.floor((diff % 36e5) / 6e4));
+      $('cd-s').textContent = pad(Math.floor((diff % 6e4) / 1e3));
     }
-    const timer = setInterval(tick, 1000);
+    timer = setInterval(tick, 1000);
     tick();
 
-    // Animaciones al hacer scroll
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-      });
-    }, { threshold: .15 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    // Animaciones al hacer scroll (con fallback si no hay soporte)
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: .15 });
+      document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
+    }
 
     // Año dinámico en el footer
-    $('year').textContent = new Date().getFullYear();
+    var yearEl = $('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
