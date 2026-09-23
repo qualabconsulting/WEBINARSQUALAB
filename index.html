@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+
+  <title>Webinar Gratuito: Microbiología de los Alimentos | QUALAB Consultoría</title>
+  <meta name="description" content="Webinar gratuito de Microbiología de los Alimentos. Jueves 1 de octubre de 2026, 7:30 PM (CDMX) vía Zoom. Regístrate gratis por WhatsApp. Cupo limitado.">
+  <meta name="theme-color" content="#0a1628">
+
+  <!-- Open Graph (para compartir en redes) -->
+  <meta property="og:title" content="Webinar Gratuito: Microbiología de los Alimentos">
+  <meta property="og:description" content="Jueves 1 de octubre de 2026 · 7:30 PM (CDMX) · Vía Zoom. Regístrate gratis. Cupo limitado.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AA%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Datos estructurados del evento (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Event",
+    "name":"Webinar gratuito: Microbiología de los Alimentos",
+    "description":"Conoce los microorganismos que afectan la inocuidad, calidad y vida útil de los alimentos.",
+    "startDate":"2026-10-01T19:30:00-06:00",
+    "eventStatus":"https://schema.org/EventScheduled",
+    "eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode",
+    "location":{"@type":"VirtualLocation","url":"https://zoom.us"},
+    "organizer":{"@type":"Organization","name":"QUALAB Consultoría"},
+    "isAccessibleForFree":true
+  }
+  </script>
+
+  <style>
+    /* ==========================================================
+       QUALAB · Webinar Microbiología de los Alimentos
+    ========================================================== */
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    html,body{overflow-x:clip}
+
+    :root{
+      --bg:#0a1628;
+      --bg-2:#0c1e37;
+      --panel:rgba(255,255,255,.05);
+      --stroke:rgba(255,255,255,.12);
+      --white:#fff;
+      --muted:#aebfd4;
+      --yellow:#ffd60a;
+      --cyan:#35d0c5;
+      --cyan-2:#8ef0e9;
+      --green:#25d366;
+      --radius:18px;
+    }
+
+    body{
+      font-family:'Poppins',system-ui,sans-serif;
+      background:var(--bg);color:var(--white);
+      line-height:1.65;-webkit-font-smoothing:antialiased;
+    }
+    ::selection{background:var(--yellow);color:#0a1628}
+    img,svg{display:block}
+    .container{width:min(1140px,100% - 48px);margin-inline:auto}
+    section[id]{scroll-margin-top:90px}
+
+    /* ---------- Botones ---------- */
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:15px 30px;border-radius:999px;border:none;cursor:pointer;
+      font-family:'Poppins';font-weight:700;font-size:1rem;text-decoration:none;
+      transition:transform .25s ease,box-shadow .25s ease;
+    }
+    .btn svg{width:20px;height:20px;flex:none}
+    .btn-yellow{background:linear-gradient(180deg,#ffe45c,var(--yellow));color:#0a1628;box-shadow:0 10px 28px rgba(255,214,10,.28)}
+    .btn-yellow:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(255,214,10,.4)}
+    .btn-green{background:linear-gradient(180deg,#3be07d,#22c15e);color:#052e18;box-shadow:0 12px 32px rgba(37,211,102,.35)}
+    .btn-green:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(37,211,102,.45)}
+    .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.28)}
+    .btn-ghost:hover{border-color:var(--cyan);color:var(--cyan-2);transform:translateY(-3px)}
+    .btn-lg{padding:18px 42px;font-size:1.08rem}
+    .btn-sm{padding:10px 22px;font-size:.9rem}
+    .btn-shout{text-transform:uppercase;letter-spacing:.04em}
+    .btn:focus-visible,a:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+
+    /* ---------- Navbar ---------- */
+    .nav{
+      position:sticky;top:0;z-index:100;
+      background:rgba(9,20,37,.82);
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(255,255,255,.07);
+    }
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+    .logo{display:inline-flex;align-items:center;gap:11px;text-decoration:none}
+    .logo-text{display:flex;flex-direction:column;line-height:1;font-family:'Anton';font-size:1.3rem;letter-spacing:.05em}
+    .logo-text small{font-family:'Poppins';font-weight:600;font-size:.6rem;letter-spacing:.26em;color:var(--cyan);text-transform:uppercase;margin-top:3px}
+    .nav-links{display:flex;gap:28px;margin-right:8px}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:#fff}
+    @media(max-width:720px){.nav-links{display:none}}
+    @media(max-width:420px){.btn-sm{padding:9px 16px;font-size:.82rem}}
+
+    /* ---------- Hero ---------- */
+    .hero{
+      position:relative;overflow:hidden;text-align:center;
+      padding:92px 0 84px;
+      background:
+        radial-gradient(900px 460px at 82% -5%,rgba(140,60,190,.22),transparent 62%),
+        radial-gradient(800px 460px at 8% 12%,rgba(53,208,197,.14),transparent 60%),
+        radial-gradient(700px 500px at 50% 118%,rgba(255,214,10,.07),transparent 60%),
+        linear-gradient(180deg,#0d2140 0%,#0a1628 55%);
+    }
+    .hero-inner{position:relative;z-index:2;max-width:840px;margin-inline:auto}
+
+    .badge{
+      display:inline-flex;align-items:center;gap:10px;
+      background:linear-gradient(180deg,#ffe45c,var(--yellow));color:#0a1628;
+      font-family:'Anton';font-size:1.05rem;letter-spacing:.28em;text-transform:uppercase;
+      padding:11px 26px 10px 22px;border-radius:6px 14px 8px 12px;
+      transform:rotate(-2deg);box-shadow:0 10px 30px rgba(255,214,10,.25);
+    }
+    .badge svg{width:20px;height:20px}
+
+    .hero-title{font-family:'Anton';text-transform:uppercase;line-height:.98;margin:32px 0 22px;text-shadow:0 6px 30px rgba(0,0,0,.45)}
+    .t-line{display:block;font-size:clamp(2.6rem,8vw,5.4rem);letter-spacing:.02em}
+    .t-small{font-size:.42em;letter-spacing:.3em;vertical-align:.2em;margin-right:.2em}
+    .t-yellow{color:var(--yellow);text-shadow:0 0 44px rgba(255,214,10,.28)}
+
+    .hero-sub{font-size:clamp(1.02rem,2vw,1.2rem);color:var(--muted);max-width:620px;margin:0 auto 34px}
+    .hero-sub strong{color:var(--cyan-2);font-weight:700}
+
+    .hero-ctas{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+    .hero-note{margin-top:18px;font-size:.85rem;color:var(--muted)}
+    .hero-note b{color:#fff}
+
+    /* ---------- Cuenta regresiva ---------- */
+    .countdown-wrap{margin-top:48px}
+    .cd-label{font-size:.76rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+    .countdown{display:flex;justify-content:center;gap:12px}
+    .cd-tile{
+      min-width:86px;padding:16px 8px 12px;border-radius:16px;text-align:center;
+      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+      backdrop-filter:blur(6px);
+    }
+    .cd-num{font-family:'Anton';font-size:clamp(1.7rem,4vw,2.4rem);line-height:1;color:var(--cyan-2)}
+    .cd-lab{display:block;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:7px}
+    .cd-live{font-weight:600;color:var(--yellow);font-size:1.05rem;padding:14px 22px;border:1px solid rgba(255,214,10,.4);border-radius:14px;display:inline-block}
+    @media(max-width:480px){.cd-tile{min-width:0;flex:1;padding:12px 4px}}
+
+    /* ---------- Franja de detalles ---------- */
+    .details{padding:0 0 100px}
+    .event-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .event-card{
+      display:flex;align-items:center;gap:14px;text-align:left;
+      background:var(--panel);border:1px solid var(--stroke);border-radius:var(--radius);
+      padding:18px 20px;backdrop-filter:blur(8px);
+      transition:transform .25s,border-color .25s;
+    }
+    .event-card:hover{transform:translateY(-4px);border-color:rgba(53,208,197,.45)}
+    .event-card>div{display:flex;flex-direction:column}
+    .ev-icon{flex:none;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(53,208,197,.14);color:var(--cyan)}
+    .ev-icon svg{width:23px;height:23px}
+    .ev-k{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+    .ev-v{font-weight:700;font-size:1.02rem;line-height:1.3}
+    .ev-s{font-size:.78rem;color:var(--muted)}
+    .event-card.limited .ev-icon{background:rgba(255,214,10,.15);color:var(--yellow)}
+    .event-card.limited .ev-v{color:var(--yellow)}
+    @media(max-width:980px){.event-strip{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:540px){.event-strip{grid-template-columns:1fr}}
+
+    /* ---------- Secciones ---------- */
+    .section{padding:100px 0}
+    .sec-head{text-align:center;max-width:640px;margin:0 auto 52px}
+    .kicker{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.76rem;margin-bottom:14px}
+    .kicker::before{content:'';width:28px;height:2px;background:var(--cyan)}
+    .h2{font-family:'Anton';text-transform:uppercase;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.1;letter-spacing:.02em}
+    .h2 .accent{color:var(--yellow)}
+    .sec-head p{color:var(--muted);margin-top:14px}
+
+    /* ---------- Temario ---------- */
+    .learn{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%)}
+    .learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .learn-card{
+      position:relative;overflow:hidden;
+      background:var(--panel);border:1px solid var(--stroke);border-radius:var(--radius);
+      padding:28px;
+      transition:transform .3s,border-color .3s,background .3s;
+    }
+    .learn-card::before{content:'';position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--cyan),transparent);opacity:0;transition:opacity .3s}
+    .learn-card:hover{transform:translateY(-6px);border-color:rgba(53,208,197,.4);background:rgba(53,208,197,.05)}
+    .learn-card:hover::before{opacity:1}
+    .lc-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+    .check{flex:none;width:42px;height:42px;border-radius:50%;background:var(--cyan);color:#04241f;display:grid;place-items:center}
+    .check svg{width:20px;height:20px}
+    .learn-card h3{font-size:1.08rem;font-weight:700}
+    .learn-card p{color:var(--muted);font-size:.95rem}
+    .num{position:absolute;top:8px;right:16px;font-family:'Anton';font-size:3.4rem;line-height:1;color:rgba(255,255,255,.055);user-select:none}
+    @media(max-width:760px){.learn-grid{grid-template-columns:1fr}}
+
+    .audience{margin-top:44px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px}
+    .aud-label{font-size:.85rem;color:var(--muted);font-weight:600;margin-right:4px}
+    .chip{padding:8px 16px;border-radius:999px;border:1px solid rgba(53,208,197,.35);color:var(--cyan-2);font-size:.82rem;font-weight:500;background:rgba(53,208,197,.07)}
+
+    /* ---------- CTA final ---------- */
+    .cta{padding:0 0 100px}
+    .cta-card{
+      position:relative;overflow:hidden;text-align:center;
+      background:linear-gradient(150deg,rgba(53,208,197,.09),rgba(255,255,255,.02) 45%,rgba(255,214,10,.07));
+      border:1px solid var(--stroke);border-radius:30px;
+      padding:clamp(44px,7vw,80px) clamp(20px,5vw,60px);
+    }
+    .cta-card::after{content:'';position:absolute;width:420px;height:420px;border-radius:50%;top:-160px;right:-120px;background:radial-gradient(circle,rgba(53,208,197,.16),transparent 65%);pointer-events:none}
+    .tagline{font-family:'Caveat';font-size:clamp(1.6rem,3.4vw,2.2rem);color:var(--cyan-2);display:inline-block;transform:rotate(-2deg);margin-bottom:10px}
+    .cta-card>p{color:var(--muted);max-width:560px;margin:14px auto 34px}
+    .cta-card>p b{color:#fff}
+    .trust{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 26px;margin-top:30px}
+    .trust span{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:.88rem}
+    .trust svg{width:16px;height:16px;color:var(--cyan)}
+
+    /* ---------- Footer ---------- */
+    .footer{border-top:1px solid rgba(255,255,255,.07);background:#081120;padding:52px 0 130px;text-align:center}
+    .footer .logo{margin-bottom:16px}
+    .footer .tagline{margin-bottom:14px}
+    .footer p{color:#7d90a8;font-size:.85rem;max-width:520px;margin:0 auto}
+
+    /* ---------- Botón flotante de WhatsApp ---------- */
+    .wa-float{
+      position:fixed;right:20px;bottom:20px;z-index:120;
+      width:62px;height:62px;border-radius:50%;
+      background:linear-gradient(180deg,#3be07d,#22c15e);color:#fff;
+      display:grid;place-items:center;
+      box-shadow:0 10px 30px rgba(37,211,102,.45);
+      transition:transform .25s;
+    }
+    .wa-float:hover{transform:scale(1.08)}
+    .wa-float svg{width:30px;height:30px}
+    .wa-float::before{content:'';position:absolute;inset:0;border-radius:50%;background:#25d366;z-index:-1;animation:pulse 2.2s ease-out infinite}
+    @keyframes pulse{0%{transform:scale(1);opacity:.55}70%{transform:scale(1.65);opacity:0}100%{opacity:0}}
+
+    /* ---------- Microorganismos decorativos ---------- */
+    .microbes span{position:absolute;border-radius:50%;opacity:.4;box-shadow:inset -10px -12px 24px rgba(0,0,0,.4);animation:float var(--dur,9s) ease-in-out infinite alternate}
+    .m1{width:130px;height:130px;top:9%;right:3%;--dur:11s;background:radial-gradient(circle at 32% 28%,#d98ae8,#8e2fa8 62%,#5a1a72)}
+    .m2{width:64px;height:64px;top:34%;right:17%;--dur:8s;background:radial-gradient(circle at 32% 28%,#9ff0e9,#2aa79d 62%,#14655e)}
+    .m3{width:96px;height:96px;top:58%;right:6%;--dur:10s;background:radial-gradient(circle at 32% 28%,#9fe870,#3e9d4e 62%,#256b34)}
+    .m4{width:56px;height:56px;top:72%;left:5%;--dur:9s;background:radial-gradient(circle at 32% 28%,#ffb066,#d96a1f 62%,#8f3d0e)}
+    .m5{width:44px;height:44px;top:24%;left:6%;--dur:7s;background:radial-gradient(circle at 32% 28%,#9ff0e9,#2aa79d 62%,#14655e)}
+    .m6{width:30px;height:30px;top:74%;right:28%;--dur:8s;background:radial-gradient(circle at 32% 28%,#d98ae8,#8e2fa8 62%,#5a1a72)}
+    .m7{width:26px;height:26px;top:12%;left:30%;--dur:6.5s;background:radial-gradient(circle at 32% 28%,#9fe870,#3e9d4e 62%,#256b34)}
+    @keyframes float{from{transform:translateY(0) rotate(0)}to{transform:translateY(-18px) rotate(8deg)}}
+    @media(max-width:860px){.microbes{display:none}}
+
+    /* ---------- Animación al hacer scroll ---------- */
+    html.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+    html.js .reveal.visible{opacity:1;transform:none}
+    .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation:none!important;transition:none!important}
+      html.js .reveal{opacity:1;transform:none}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════
+       ⚠️ IMPORTANTE: Reemplaza el enlace del grupo de WhatsApp.
+       Busca en el archivo TODAS las líneas que contengan:
+       https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO
+       y sustitúyelas por el enlace real de tu grupo
+       (WhatsApp → info del grupo → Invitar mediante enlace).
+  ════════════════════════════════════════════════════════════ -->
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#inicio" aria-label="QUALAB Consultoría - Inicio">
+        <svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+          <circle cx="24" cy="40" r="13" fill="none" stroke="#fff" stroke-width="4.5"/>
+          <path d="M31.5 30.5 40.5 21" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="24" cy="45" r="5.5" fill="#35d0c5"/>
+          <circle cx="47" cy="15" r="4.5" fill="#35d0c5"/>
+          <circle cx="56" cy="24" r="3" fill="#fff"/>
+          <circle cx="45" cy="6" r="2.2" fill="#fff"/>
+        </svg>
+        <span class="logo-text">QUALAB<small>Consultoría</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#aprenderas">Temario</a>
+        <a href="#detalles">Fecha y hora</a>
+      </nav>
+      <a class="btn btn-yellow btn-sm" target="_blank" rel="noopener"
+         href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">Registrarme gratis</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="microbes" aria-hidden="true">
+        <span class="m1"></span><span class="m2"></span><span class="m3"></span>
+        <span class="m4"></span><span class="m5"></span><span class="m6"></span><span class="m7"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <span class="badge reveal">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2.3l4.3 2.6c.7.4 1.7-.1 1.7-.9V8.6c0-.8-1-1.3-1.7-.9L16 10.3V8a2 2 0 0 0-2-2H4z"/></svg>
+          Webinar
+        </span>
+
+        <h1 class="hero-title reveal d1">
+          <span class="t-line">Microbiología</span>
+          <span class="t-line"><span class="t-small">de los</span> <span class="t-yellow">Alimentos</span></span>
+        </h1>
+
+        <p class="hero-sub reveal d2">
+          Conoce a los microorganismos que pueden afectar la
+          <strong>inocuidad</strong>, <strong>calidad</strong> y <strong>vida útil</strong> de los alimentos.
+        </p>
+
+        <div class="hero-ctas reveal d3">
+          <a class="btn btn-yellow btn-lg btn-shout" target="_blank" rel="noopener"
+             href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            ¡Regístrate gratis!
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#aprenderas">Ver temario</a>
+        </div>
+
+        <p class="hero-note reveal d4">Al registrarte entrarás al <b>grupo oficial de WhatsApp</b> del evento. Sin costo.</p>
+
+        <div class="countdown-wrap reveal d4">
+          <p class="cd-label">El webinar comienza en</p>
+          <div class="countdown" id="countdown" role="timer">
+            <div class="cd-tile"><span class="cd-num" id="cd-d">--</span><span class="cd-lab">Días</span></div>
+            <div class="cd-tile"><span class="cd-num" id="cd-h">--</span><span class="cd-lab">Horas</span></div>
+            <div class="cd-tile"><span class="cd-num" id="cd-m">--</span><span class="cd-lab">Min</span></div>
+            <div class="cd-tile"><span class="cd-num" id="cd-s">--</span><span class="cd-lab">Seg</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fecha / hora / plataforma -->
+    <section class="details" id="detalles" aria-label="Fecha, hora y plataforma del evento">
+      <div class="container">
+        <div class="event-strip">
+          <div class="event-card reveal d1">
+            <span class="ev-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+            <div><span class="ev-k">Fecha</span><span class="ev-v">Jueves 1 de octubre</span><span class="ev-s">2026</span></div>
+          </div>
+          <div class="event-card reveal d2">
+            <span class="ev-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+            <div><span class="ev-k">Hora</span><span class="ev-v">7:30 PM</span><span class="ev-s">Hora CDMX</span></div>
+          </div>
+          <div class="event-card reveal d3">
+            <span class="ev-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2.3l4.3 2.6c.7.4 1.7-.1 1.7-.9V8.6c0-.8-1-1.3-1.7-.9L16 10.3V8a2 2 0 0 0-2-2H4z"/></svg></span>
+            <div><span class="ev-k">Plataforma</span><span class="ev-v">Vía Zoom</span><span class="ev-s">Transmisión en vivo</span></div>
+          </div>
+          <div class="event-card limited reveal d4">
+            <span class="ev-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <div><span class="ev-k">Disponibilidad</span><span class="ev-v">¡Cupo limitado!</span><span class="ev-s">Aparta tu lugar hoy</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Temario -->
+    <section class="section learn" id="aprenderas">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">Temario</span>
+          <h2 class="h2">En este webinar <span class="accent">aprenderás</span></h2>
+          <p>Cuatro claves para entender y controlar los microorganismos en la industria alimentaria.</p>
+        </div>
+
+        <div class="learn-grid">
+          <article class="learn-card reveal d1">
+            <span class="num" aria-hidden="true">01</span>
+            <div class="lc-head">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              <h3>Tipos de microorganismos en los alimentos</h3>
+            </div>
+            <p>Bacterias, hongos, virus y parásitos: conócelos y aprende a distinguirlos en tus productos.</p>
+          </article>
+
+          <article class="learn-card reveal d2">
+            <span class="num" aria-hidden="true">02</span>
+            <div class="lc-head">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              <h3>Patógenos de importancia y sus riesgos</h3>
+            </div>
+            <p>Los principales responsables de enfermedades transmitidas por alimentos (ETA) y su impacto.</p>
+          </article>
+
+          <article class="learn-card reveal d3">
+            <span class="num" aria-hidden="true">03</span>
+            <div class="lc-head">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              <h3>Factores que favorecen su crecimiento</h3>
+            </div>
+            <p>Temperatura, pH, humedad y actividad acuosa: qué condiciones favorecen su proliferación.</p>
+          </article>
+
+          <article class="learn-card reveal d4">
+            <span class="num" aria-hidden="true">04</span>
+            <div class="lc-head">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              <h3>Buenas prácticas para su control</h3>
+            </div>
+            <p>Prevención, higiene y control para proteger la inocuidad y la vida útil de los alimentos.</p>
+          </article>
+        </div>
+
+        <div class="audience reveal">
+          <span class="aud-label">Ideal para:</span>
+          <span class="chip">Industria alimentaria</span>
+          <span class="chip">Control de calidad</span>
+          <span class="chip">Producción</span>
+          <span class="chip">Estudiantes</span>
+          <span class="chip">Consultores</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="cta" id="registro">
+      <div class="container">
+        <div class="cta-card reveal">
+          <span class="tagline">La ciencia detrás de tu comida</span>
+          <h2 class="h2">¡Aparta tu lugar <span class="accent">hoy</span>!</h2>
+          <p>El registro es <b>100% gratuito</b>. Únete al grupo de WhatsApp de <b>QUALAB Consultoría</b> y recibe ahí el enlace de Zoom, recordatorios y el material del webinar.</p>
+
+          <a class="btn btn-green btn-lg" target="_blank" rel="noopener"
+             href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Unirme al grupo de WhatsApp
+          </a>
+
+          <div class="trust">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></svg>Registro gratis</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></svg>Cupo limitado</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></svg>Material incluido</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <a class="logo" href="#inicio" aria-label="QUALAB Consultoría">
+        <svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+          <circle cx="24" cy="40" r="13" fill="none" stroke="#fff" stroke-width="4.5"/>
+          <path d="M31.5 30.5 40.5 21" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="24" cy="45" r="5.5" fill="#35d0c5"/>
+          <circle cx="47" cy="15" r="4.5" fill="#35d0c5"/>
+          <circle cx="56" cy="24" r="3" fill="#fff"/>
+          <circle cx="45" cy="6" r="2.2" fill="#fff"/>
+        </svg>
+        <span class="logo-text">QUALAB<small>Consultoría</small></span>
+      </a>
+      <br>
+      <span class="tagline">La ciencia detrás de tu comida</span>
+      <p>© <span id="year"></span> QUALAB Consultoría. Webinar gratuito con fines educativos. Transmisión vía Zoom.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" target="_blank" rel="noopener" aria-label="Únete al grupo de WhatsApp"
+     href="https://chat.whatsapp.com/CODIGO-DE-TU-GRUPO">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    // ====== CONFIGURA AQUÍ LA FECHA Y HORA DEL EVENTO ======
+    // Formato: AAAA-MM-DDTHH:MM:SS-06:00  (-06:00 = hora CDMX)
+    const EVENT_DATE = new Date('2026-10-01T19:30:00-06:00');
+    // ========================================================
+
+    const $ = id => document.getElementById(id);
+    const pad = n => String(n).padStart(2, '0');
+
+    function tick() {
+      const diff = EVENT_DATE.getTime() - Date.now();
+      if (diff <= 0) {
+        $('countdown').innerHTML = '<p class="cd-live">¡Es hoy! Revisa el grupo de WhatsApp para el enlace de Zoom 🎥</p>';
+        clearInterval(timer);
+        return;
+      }
+      $('cd-d').textContent = pad(Math.floor(diff / 864e5));
+      $('cd-h').textContent = pad(Math.floor(diff % 864e5 / 36e5));
+      $('cd-m').textContent = pad(Math.floor(diff % 36e5 / 6e4));
+      $('cd-s').textContent = pad(Math.floor(diff % 6e4 / 1e3));
+    }
+    const timer = setInterval(tick, 1000);
+    tick();
+
+    // Animaciones al hacer scroll
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: .15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Año dinámico en el footer
+    $('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
